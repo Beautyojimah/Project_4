@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecast</title>
+    <link rel="stylesheet" href="/static/css/forecast.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Select Store and Duration for Forecast</h2>
+
+    <div class="input-group">
+        <label for="storeSelection">Select Store:</label>
+        <select id="storeSelection">
+            <option value="4">Store 4</option>
+            <option value="219">Store 219</option>
+            <option value="676">Store 676</option>
+            <option value="1066">Store 1066</option>
+            <option value="1098">Store 1098</option>
+        </select>
+    </div>
+
+    <div class="input-group">
+        <label for="daysPrediction">Number of Days:</label>
+        <input id="daysPrediction" type="text" placeholder="Enter number of days">
+    </div>
+
+    <button onclick="getForecast()">Get Forecast</button>
+
+    <div id="forecastPlot"></div>
+</div>
+
+<script src="/static/js/forecast.js"></script>
+</body>
+</html>

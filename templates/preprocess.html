@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Preprocessing</title>
+    <link rel="stylesheet" href="/static/css/preprocess.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button onclick="showDropdown()" class="dropbtn">Choose Analysis Type</button>
+        <div id="analysisDropdown" class="dropdown-content">
+            <a href="#" onclick="showDiv('univariate')">Univariate Analysis</a>
+            <a href="#" onclick="showDiv('bivariate')">Bivariate Analysis</a>
+            <a href="#" onclick="showDiv('multivariate')">Multivariate Analysis</a>
+        </div>
+    </div>
+
+    <!-- Containers for each type of analysis -->
+    <div id="univariate" class="analysis-content">
+        <!-- Univariate Plots Here -->
+        <div id="salesDensity" style="width:48%; display:inline-block;"></div>
+        <div id="customersDensity" style="width:48%; display:inline-block;"></div>
+
+        <!-- Piecharts -->
+        <div id="schoolHolidayPie" style="width:30%; display:inline-block;"></div>
+        <div id="promoPie" style="width:30%; display:inline-block;"></div>
+        <div id="promo2Pie" style="width:30%; display:inline-block;"></div>
+
+
+    </div>
+
+    <div id="bivariate" class="analysis-content">
+        <!-- Bivariate Plots Here -->
+        <div id="salesDayOfWeek"></div>
+        <div id="salesCustomerScatter"></div>
+        <div id="salesPromoBar" style="width:24%; display:inline-block;"></div>
+        <div id="salesSchoolHolidayBar" style="width:24%; display:inline-block;"></div>
+        <div id="salesStateHolidayBar" style="width:24%; display:inline-block;"></div>
+
+
+    </div>
+
+    <div id="multivariate" class="analysis-content">
+        <!-- Multivariate Plots Here -->
+        <div id="correlationHeatmap"></div>
+    </div>
+
+    <script src="/static/js/preprocess.js"></script>
+</body>
+
+</html>

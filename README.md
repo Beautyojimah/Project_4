@@ -31,7 +31,7 @@ The database was used to hold the data that was used for building the interactiv
 - Data Analysis: Python Pandas
 - Visualization: Python Matplotlib, JavaScript Plotly
 - Web Development: HTML, CSS, Bootstrap
-- Database: SQL Database/MongoDB Database
+- Database: SQLite Database
 
 ## How to Use
 
